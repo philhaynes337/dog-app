@@ -28,6 +28,15 @@ function displayResults(responseJson) {
   else if (responseJson.status == "error") {
 
   console.log("If else error worked")
+  $('.js-add-img').append(
+      `
+        <div class="js-box">
+        Please recheck the breed name and spelling!
+        </div>
+      `   
+    )
+  
+
 }
   console.log(responseJson.message);
   console.log(responseJson.code);
@@ -39,7 +48,7 @@ function displayResults(responseJson) {
 function watchForm() {
   $('form').submit(event => {
     event.preventDefault();
-
+    $('.js-box').remove();
     
     let totalDogPics = $("select#numdogs").val();
 
@@ -72,6 +81,8 @@ function notFound() {
 
   console.log("Image not found");
 }
+
+
 
 
 let htmlD = '';	

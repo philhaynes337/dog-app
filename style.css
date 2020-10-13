@@ -4,6 +4,8 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: #d1faff;
+  margin: auto;
 }
 
 .container {
@@ -17,12 +19,24 @@ body {
 */
 
 .results-img {
-
+	padding: 10px;
 	margin: auto;
 
 }
 .js-box {
-	width: 1000px;
-	height: 1000px;
+	margin: auto;
 	border-radius: 25px
+}
+
+.btn {
+
+	background-color: #6a8eae;
+	border-radius: 12px;
+	color: #FFFFFF;
+}
+
+img {
+	height: 500px;
+	width: 500px;
+	border-radius: 25px;
 }
