@@ -11,6 +11,18 @@ body {
   margin: 0 auto;
 }
 
-.hidden {
+/*.hidden {
   display: none;
+}
+*/
+
+.results-img {
+
+	margin: auto;
+
+}
+.js-box {
+	width: 1000px;
+	height: 1000px;
+	border-radius: 25px
 }
