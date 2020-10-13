@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dog API Example</title>
     <link rel="shortcut icon" href="">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
@@ -19,21 +19,26 @@
         	<label for="numdogs">How many dogs?:</label>
 <select id="numdogs" name="numdogs" class="js-numdogs">
 
-</select>
-          <input type="submit" value="Get a dog pic!">
+  </select>
+          <label for="breed">What breed of dog?</label>
+            <input type="text" id="js-breed" class="js-breed">Breed Name</input>
+
+
+            <input type="submit" value="Get a dog pic!">
         </form>
         <section class="results hidden">
           <h2>Look at this dog!</h2>
-          <img class="results-img" alt="placeholder">
+          	<article class="js-add-img" id="js-add-img">
+          <!-- <img class="results-img" alt="placeholder"> -->
+          	</article>
         </section>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
+   
 
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="script.js"></script>
 <script src="dog.js"></script>
 </body>
 </html>
